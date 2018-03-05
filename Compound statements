@@ -1,0 +1,13 @@
+Compound statements contain (groups of) other statements; they affect or control the execution of those other statements in some way. In general, compound statements span multiple lines, although in simple incarnations a whole compound statement may be contained in one line.The if, while and for statements implement traditional control flow constructs. try specifies exception handlers and/or cleanup code for a group of statements, while the with statement allows the execution of initialization and finalization code around a block of code. Function and class definitions are also syntactically compound statements.
+The while statement is used for repeated execution as long as an expression is true:
+while_stmt ::=  "while" expression ":" suite
+                ["else" ":" suite]
+ his repeatedly tests the expression and, if it is true, executes the first suite; if the expression is false (which may be the first time it is tested) the suite of the else clause, if present, is executed and the loop terminates.  
+ # Marianne Lawless
+
+i = 1
+while i <= 10:
+  print (i) 
+  i = i + 1 
+
+  print("the final value of i is:", i )
