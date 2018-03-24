@@ -3,7 +3,7 @@ The while statement is used for repeated execution as long as an expression is t
 while_stmt ::=  "while" expression ":" suite
                 ["else" ":" suite]
  his repeatedly tests the expression and, if it is true, executes the first suite; if the expression is false (which may be the first time it is tested) the suite of the else clause, if present, is executed and the loop terminates.  
- # Marianne Lawless
+ # Marianne Lawless.
 
 i = 1
 while i <= 10:
